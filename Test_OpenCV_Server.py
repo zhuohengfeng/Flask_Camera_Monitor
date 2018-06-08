@@ -12,7 +12,7 @@ import os,sys,pygame
 import numpy
 
 svrsocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-svrsocket.bind(("192.168.0.18", 6000))
+svrsocket.bind(("192.168.0.8", 6000))
 print("Start the service ....")
 while 1:
     stringData, address = svrsocket.recvfrom(65500)
